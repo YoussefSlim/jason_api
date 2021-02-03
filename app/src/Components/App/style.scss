@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.App {
+  text-align: center;
+  &__form {
+    position: relative;
+    top: -4em;
+    width: 20%;
+    border-radius: 15px;
+    box-shadow: 6px 6px 19.5px grey;
+  }
+  &__top {
+    background-color: #f6f6f6;
+    height: 8em;
+    margin-bottom: 8em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  &__top-logo {
+    width: 14em;
+    height: 5em;
+    position: relative;
+    top: 1em;
+    right: 13px;
+  }
+  &__top-title {
+    margin-top: 0.5em;
+    font-size: 3em;
+  }
+  &__bottom {
+    position: absolute;
+
+    background-color: darkcyan;
+    width: 100%;
+  }
+}
+
+.form {
+  margin-top: 10 em !important;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    width: 21em;
+    height: 2em;
+    font-size: x-large;
+    text-align: justify;
+    border-radius: 6px;
+  }
+  &__btn {
+    height: 3em;
+    width: 8em;
+    margin-left: 62em;
+    font-size: 1em;
+    margin: 1em 75em;
+    margin-bottom: 6rem;
+    &:hover {
+      opacity: 2;
+      color: rgb(120, 112, 112);
+      cursor: pointer;
+    }
+  }
+  &__label {
+    margin-right: 17em;
+    margin-bottom: 0.3em;
+    font-size: 19px;
+  }
+}
+
+.member {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 56em;
+  }
+  &__title {
+    font-size: 3em;
+  }
+}
