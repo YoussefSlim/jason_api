@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
-import "./style.scss";
 
 export default function ListTeam() {
   const [members, setMembers] = useState([]);

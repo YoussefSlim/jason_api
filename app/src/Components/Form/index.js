@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import "./style.scss";
 
 export default function Form() {
   const [input, setInput] = useState("");
