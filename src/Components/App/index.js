@@ -1,8 +1,12 @@
 import "./style.scss";
 import Form from "../Form";
 import ListTeam from "../ListTeam";
+import { useState } from "react";
 
 export default function App() {
+  // State initialization
+  const [listAfterPost, setlistAfterPost] = useState({});
+
   return (
     <div className="App">
       <header className="App__top">
@@ -10,8 +14,8 @@ export default function App() {
         <h1 className="App__top-title">Les Argonautes</h1>
       </header>
       <div className="App__midle">
-        <Form />
-        <ListTeam />
+        <Form setlistAfterPost={setlistAfterPost} />
+        <ListTeam listAfterPost={listAfterPost} />
       </div>
       <footer className="App__bottom">
         <p>© Youssef Slim - Wild Code School</p>

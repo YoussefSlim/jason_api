@@ -16,20 +16,15 @@ const memberController = {
   },
   // create a member
   create: async (req, res) => {
-    console.log("create member", req.body.input);
     try {
       if (!req.body.input) {
         throw new Error("Veuillez rentrer le membre de l'équipage");
       }
 
-      //
       const newMember = await Members.create({
         name: req.body.input,
       });
-      console.log(newMember.toJson);
-      console.log("create member line 29", req.body);
-      //console.log("newMember =>", newMember);
-      // envoyer une réponse
+
       res.status(201).json(newMember);
     } catch (error) {
       console.trace(error);
