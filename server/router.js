@@ -1,10 +1,11 @@
 const router = require("express").Router();
 
-// import des 3 controllers
+// import of 3 controllers
 const memberController = require("./controllers/memberController");
 
-// List
-router.get("/membres", memberController.member);
+// Members
+router.get("/members", memberController.member);
 router.post("/create", memberController.create);
-
+router.put("/members/:memberId", memberController.updateMember);
+router.delete("/members/:memberId", memberController.deleteMember);
 module.exports = router;
