@@ -13,7 +13,7 @@ export default function Modale({ message, setDeleteIsSuccess }) {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
-          Close
+          Retour à l'acceuil
         </Button>
       </Modal.Footer>
     </Modal.Dialog>

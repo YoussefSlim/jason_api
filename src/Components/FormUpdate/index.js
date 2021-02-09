@@ -28,15 +28,16 @@ export default function FormUpdate({ setOpen, open, id, name, setMembers }) {
     <form className="form">
       <label>
         <input
-          className="form__input--update"
+          className="form__input-update"
           type="text"
           placeholder={name}
           name="updateName"
+          required={true}
           value={inputUpdate}
           onChange={handleChangeUpdate}
         />
       </label>
-      <button className="form__btn--update" onClick={handleClick}>
+      <button className="form__btn-update" onClick={handleClick}>
         enregistrer les modifications
       </button>
     </form>

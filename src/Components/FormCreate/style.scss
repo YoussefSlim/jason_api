@@ -2,25 +2,30 @@
   margin-top: 10 em !important;
   display: flex;
   flex-direction: column;
-  &__input-update {
-    width: 12em;
-    height: 1.5em;
+  &__input-create {
+    width: 21em;
+    height: 2em;
     font-size: x-large;
     text-align: justify;
     border-radius: 6px;
-    margin-top: 1em;
   }
-  &__btn-update {
-    margin: 2rem;
-    height: 2rem;
+  &__btn-create {
+    margin: 2rem 73rem;
+    height: 3rem;
     border-radius: 16px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     box-shadow: 6px 6px 19.5px grey;
+    width: 8%;
     &:hover {
       opacity: 2;
       transition: 1s;
       background-color: #e8bebe;
       cursor: pointer;
     }
+  }
+  &__label {
+    margin-right: 17em;
+    margin-bottom: 0.3em;
+    font-size: 19px;
   }
 }

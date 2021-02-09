@@ -5,6 +5,8 @@ import { Card, Button } from "react-bootstrap";
 import FormUpdate from "../FormUpdate";
 import Modale from "../Modal";
 
+import "./style.scss";
+
 export default function ListTeam({
   listAfterPost,
   listAfterDelete,
@@ -76,21 +78,23 @@ export default function ListTeam({
           <div className="member__list">
             {members.map(({ id, name }) => {
               return (
-                <Card key={id} style={{ width: "12rem" }}>
+                <Card key={id}>
                   <Card.Img
+                    className="card__img"
                     style={{ width: "100%" }}
                     variant="top"
                     src="argonautes.png"
                   />
                   {open ? (
                     <Card.Body>
-                      <Card.Title>{name}</Card.Title>
-                      <Card.Text>
+                      <Card.Title className="card__title">{name}</Card.Title>
+                      <Card.Text className="card__description">
                         Ose constamment te surpasser, pour apprendre à mieux te
                         connaître et ainsi trouver le courage de réaliser tes
                         rêves
                       </Card.Text>
                       <Button
+                        className="card__btn-update"
                         value={id}
                         variant="primary"
                         onClick={handleClickUpdate}
@@ -98,6 +102,7 @@ export default function ListTeam({
                         Editer
                       </Button>
                       <Button
+                        className="card__btn-remove"
                         value={id}
                         variant="primary"
                         onClick={handeleRemove}

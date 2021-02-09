@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
+import "./style.scss";
+
 export default function Form({ setlistAfterPost }) {
   // State initialization
   const [input, setInput] = useState("");
@@ -31,7 +33,7 @@ export default function Form({ setlistAfterPost }) {
         <label>
           <p className="form__label">Nom de l'Argronaute</p>
           <input
-            className="form__input"
+            className="form__input-create"
             type="text"
             placeholder="Ajouter un(e) Argonaute "
             required={true}
@@ -40,7 +42,7 @@ export default function Form({ setlistAfterPost }) {
             onChange={handleChange}
           />
         </label>
-        <button className="form__btn" onClick={handleClick}>
+        <button className="form__btn-create" onClick={handleClick}>
           Envoyer
         </button>
       </form>
